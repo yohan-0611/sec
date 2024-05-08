@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<!--
+	화면결과 : th 를 포함해서 총 11개의 로우와 3개의 컬럼으로 구성된 테이블을 작성하세요.
+	각 컬럼명은 company, ceo, country(값은 아무거나 넣으세요)
+	
+	이렇게 만든 테이블은 컬럼명이 있는 로우만 여러분이 좋아하는 컬러로 배경생을 지정하세요.
+	테이블은 striped tabel 로 구성 시키세요...
+	컬럼명 컬럼은 padding-top 12,padding-bottom 12 정렬은 left, bgcolor는 맘대로
+	폰트컬러는 white 롤 하세요
+	
+	td는 boder 스타일을 주는 1soildfavor color'
+    모든스타일은 my custom 이라는 id를 먼저 저의하고 그 하위에 각 요소가 적용될 수 있도록 스타일을 정의 해서 테이블에 적요오디어야합니다'
+	
+-->
+	<style>
+		#mycustom {
+			font-family: Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		#mycustom th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: blue;
+			color: white;
+		}
+		
+		#mycustom tr:nth-child(odd) {
+			background-color: #f2f2f2;
+		}
+
+
+		#mycustom tr:hover {
+			background-color: coral;
+		}
+
+		 #mycustom th,
+		 #mycustom td {
+			border: solid 1px black;
+		}
+		
+
+	</style>
+
+</head>
+
+<body>
+	<table id="mycustom">
+		<tr>
+			<th>company</th>
+			<th>ceo</th>
+			<th>country</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>14</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>17</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>20</td>
+			<td>21</td>
+		</tr>
+		<tr>
+			<td>22</td>
+			<td>23</td>
+			<td>24</td>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td>26</td>
+			<td>27</td>
+		</tr>
+		<tr>
+			<td>28</td>
+			<td>29</td>
+			<td>30</td>
+		</tr>
+	</table>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+div{
+	width: 200px;
+	height: 100px;
+	margin: 5px;
+	padding: 5px;
+	font-size: 16px;
+	background-color: fuchsia;
+}
+
+div#display{
+		border: 2px dotted blue;
+			
+}
+	
+.area{
+		font-weight: bold;
+}

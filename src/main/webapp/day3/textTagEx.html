@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 서식 문자 태그 알아봅니다.-->
+	<!-- 윗첨자(sup), 아래첨자(sub), 강조 및 italic(em), 강조(strong), i(italic) -->
+	<P>
+		<ul>
+			<li>3의 3제곱은 = 3<sup>3</sup></li>
+			<li>원소기호(아래첨자) = C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+			<li>정말<em>중요</em> 한건, HTML Tag 보다 <strong>구조</strong>를 이해하는 겁니다.</li>
+			<li>이탤릭서체롤 강조시엔 <i>italic</i> 태그 사용합니다.</li>
+		</ul>
+	</P>
+	
+	<hr>
+	<h3>목록 요소 알아보기</h3>
+	<p>
+		크게 2종류 입니다.<br>
+		순서가 있는 목록 &lt;ol&gt;과 없는 목록(ul)...
+		<!--html 은 공백을 하나만 적용하고 나머지는 않됨..&nbsp; 공백 escape 문자입니다-->
+		각 목록은 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; li 라는 하위 태그로 컨텐트를 표현합니다.
+		
+		<!-- 순서 목록 부터알아봅니다..ol...대표적 속성으로는 type 이 있고, 값으로는 숫자, 로마자 등이 있어요..
+		이 type 을 선언하면, list에서 표현되는 컨텐트는 type 순으로 보여집니다..ex)type="1" ==> 1.bla..bla..bla..2.bla..bla.. -->
+		
+		이클립스 사용방법<br>
+		
+		<ol type="I" start="2">
+			<li><a href="http://www.eclips.org">다운</a>받기</li>
+			<li>압축 풀기</li>
+			<li>압축 해제된 폴더에서 eclipse.exe 실행하기</li>
+		</ol>
+		
+		<h3>순서 없는 목록 보기</h3>
+		<ul type="square">
+			<!-- css에서 수정하지 않으면, 기본 Circle 을 사용합니다-->
+			<li>일번목록</li>
+			<li>2번목록</li>
+			<li>3번목록</li>
+			<li>4번목록</li>
+		</ul>
+		
+		
+		
+	</p>
+	
+	<p>
+		<!--pre tag : 모든 공백, 엔터를 그대로 반영해주는 Tag 입니다. 단.. 조금은 작게 보이는 단점이 있어서
+		보통은 잘 쓰이지 않음.. 디자이너가 css를 통해 적용합니다...그냥 그렇구나 정도만 이해 하세요-->
+		
+		<pre>
+			안녕하세요.
+			
+			이건 pre tag 내에 있는 컨텐츠입니다.
+			
+			모든 것들이 다           적용됩니다.
+		</pre>
+	</p>
+
+</body>
+</html>

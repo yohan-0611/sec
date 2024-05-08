@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--css 파일 링크가 아닌 style 로 정의해서 정의해 보기-->
+<style>
+body{
+	background-color: yellow;
+	/* 테이블에 스타일 적용해보기.. 방법은 되게 쉽습니다... 요소명 또는 요소명들을 , 를 기준으로 나열후 속성 : 값 주면 됩니다.*/
+	/* 한 속성의 값으로는 여러개가 올 수 있는데, 이때는 공백으로 구분해 주면 됩니다. 각 값을 끝은 ; 으로 마무리 해주면 됩니다.*/
+}
+table, th, td{
+	border: 1px solid gray;
+	border-collapse: collapse;
+	}
+
+th,td{
+	padding: 10px 20px;
+}
+
+</style>
+<title>Insert title here</title>
+</head>
+<body style="background-color: blueviolet;">
+	<h2>Table ColGroup 사용 예</h2>
+	
+	<table>
+		<caption>FullStack 개발자로의 길</caption>
+		<colgroup>
+		<!--col 은 single tag... 적용할 속성을 정의 합니다.. 그럼 순차적으로 컬럼순서에 맞게 매핑되요-->
+			<col style="background-color: #fffacd;">
+			<col>
+			<col style="width:  150px;">
+			<col style=" width: 300px;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>과목명</th><th>교육기간</th><th>난이도(상중하)</th><th>중요도(상중하)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td rowspan="2">Front End</td>
+			<td>약 한달</td>
+			<td>중~하</td>
+			<td>상(자바자바스크립트)</td>
+			</tr>
+			<tr>
+			<td>필요시 좀더</td>
+			<td>중~하</td>
+			<td>리액트 때문에 스크립트 잘해야함.</td>
+			</tr>
+			<tr>
+			<td>Oracle DB</td>
+			<td>약 3주</td>
+			<td>중</td>
+			<td>좀 지루함..</td>
+			</tr>
+			<tr>
+			<td>백앤드</td>
+			<td>약 2개월</td>
+			<td>상</td>
+			<td>상(자바 를 잘해야함)</td>
+			</tr>
+		</tbody>
+		
+		
+		
+	</table>
+</body>
+</html>

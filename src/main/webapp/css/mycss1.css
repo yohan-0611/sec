@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*
+여긴 주석입니다.
+*/
+div{
+	margin: 30px auto;
+	background-color: bisque;
+	width: 300px;
+	border: 15px dotted green;
+	padding: 50px;
+}
+

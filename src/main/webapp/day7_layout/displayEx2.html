@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자바스크립트를 이용한 동적 화면 보이기</title>
+<style>
+
+
+	#panel, .flip{
+		font-size: 16px;
+		padding: 10px;
+		text-align: center;
+		background-color: green;
+		color: white;
+		border: solid 1px blue;
+		margin: auto;	
+	}
+	
+	#panel{
+		display: none;
+		}	
+</style>
+</head>
+<body>
+	<h1>Display 속성과 자바스크립트를 이용한 동적 제어하기</h1>
+	<p class="flip" onclick="myfuction();">Panel 내용을 보려면 Click 해주세요~</p>
+	
+	<div id="panel">
+		<p>배고프다 빨리 점심시간이 되었으면 좋겠다. 오늘 동현이가 운동을 안갔으면 좋겠다</p>
+		<p>나도 월요병에 걸려버린걸까 빨리 금요일이 되었으면 좋겠다.
+			선생님이 뭘 굉장히 길게 적고 계신다. 그래서 나도 헛소리 몇줄 더해야겠다.
+			머리를 잘라야하는데 오늘 미용실이 쉬는 날이다. 그래서 내일 운동 빠질려했는데 오늘도 빠지게될것같다
+			근데 수요일도 약속있어서 운동을 빠져야할것같다. 말그대로 월화수 다빠져버린다 큰일이다.
+		</p>
+	</div>
+	<script>
+		function myfuction(){
+			//alert('myfuction 이 호출되었네요..');//
+			document.getElementById("panel").style.display = 'block';
+		}
+	</script>
+</body>
+</html>

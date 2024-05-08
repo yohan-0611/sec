@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #ccc;
+	padding: 20px;
+}
+
+#signup{
+	background-color: #fff;
+	border: 1px solid #222;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;
+	margin: 30px auto;
+}
+
+#signup fieldset{
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+
+#signup legend{
+	padding: 0 0 10 5;
+	font-size: 16px;
+	font-weight: bold;
+}
+#signup ul li{
+	line-height: 30px;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+	list-style-type: none;
+}
+
+#signup button{
+	border: 1px solid #222;
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 7px 25px;
+	margin: auto;	
+	letter-spacing: 1px;
+	display: block;
+}
+#signup label{
+	float: left;
+	font-size: 13px;
+	width: 110px;
+}
+#signup input[type="text"] input[type="password"] input[type="tel"] input[type="email"]{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 13px;
+	padding: 5px;
+	width: 200px;	
+}
+
+
+input[required]{
+	border: 1px solid;
+}
+
+input[readonly]{
+	border: none;
+}
+
+#signup input[type='text']:focus{
+	background-color: lightblue;
+}
+/*
+	가상 클래스(요소로는 존재하지 않지만, 특정 기능을 수행하는 클래스를 뜻함...
+	문법은 모든 요소옆에":" 클래스명을 주고 값을 지정함..(love hate 링크 요소의 가상클래스 접두어 표현)
+*/

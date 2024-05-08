@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<!--목록(list) 에 style 적용하기..이건 잘 알아두면 좋아요.
+
+ul, ol
+-->
+	<style>
+		/*2.번 image 불릿 사용하기*/
+
+		div {
+			width: 400px;
+			height: 500px;
+			border: 1px solid blue;
+			text-align: center;
+		}
+
+		ul#mylist {
+			list-style: square inside url(../images/dot.png);
+		}
+
+		ul {
+			list-style-image: url(../images/dot.png);
+			background-color: blueviolet;
+			padding: 20px;
+		}
+
+		ol {
+			background-color: yellowgreen;
+			padding: 20px;
+		}
+
+		ul li {
+			background-color: hotpink;
+			color: darkred;
+			padding: 5px;
+			margin-left: 35px;
+		}
+
+		ol li {
+			background-color: lime;
+			color: blanchedalmond;
+			padding: 5px;
+		}
+
+		/* 특정 요소내에는 특정 요소가 반드시 존재해야 하는 중첩같은 요소(ul,ol) 같은것들
+		요소를 나열해서 스타일을 정의할 수 있습니다...단 , 가아니라 공백을 줘야 합니다.*/
+
+		/*1.번 기존 리스트의 불릿의 기본 모양 정의 하기*/
+		ul.a {
+			/*list-style-type: circle;*/
+			/*리스트의 내용을 들여쓸때에는 position: inside; 를 이용합니다. outside(defult)*/
+			list-style-position: inside;
+		}
+
+		ul.b {
+			list-style-type: square;
+		}
+
+		ol.c {
+			list-style-type: upper-roman;
+		}
+
+		ol.d {
+			list-style-type: lower-greek;
+		}
+
+		/*
+	퀴즈 : div Css 를 정의 합니다.(400,500)
+	라인은 실선으로 하고, 컬러는 좋아하는 색으로 하세요
+	내부에 사용되는 text는 중앙 정렬시키도록 하세요
+	내부에 사용되는 text는 순서없는 항목으로 mylist 라는 id 로 사용할 수 있도록 정의하고 
+	각스타일은 이미지 불릿을 사용하도록 하고, 들여쓰기가 되도록  하세요.
+*/
+	</style>
+</head>
+
+<body>
+	<ul class="a">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<ul class="b">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<ol class="c">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<ol class="d">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+
+
+	<div>
+		<ul id="mylist">
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ul>
+	</div>
+	<hr>
+
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Form Tag의 개론</h1>
+	<div>
+		<p>form tag 의 기본 속성 알아보기</p>
+		<ul>
+			<li>forn tag 에는 데이터를 서버에 전송할때 전송 방식을 결정할 수 있습니다.</li>
+			<li>이 전송방식을 method 라는 속성으로 정의 하는데, 기본값은 get(데이터 길이제한 있음...@4,100 bytes) 입니다</li>
+			<li>method 는 약 7개로 값이 정의 되어있는데,get, post, put, delete, trace,?? </li>
+			<li>get 은 일반적으로 데이터 조회(select)를 서버에 요청시에 사용됨</li>
+			<li>post 는 데이터 생성(insert), 갱신(update), 삭제(delete) 를 서버에 요청시에 사용됨</li>
+			<li>나머지 것들은 RESTfull Service 를 강의할 때 알게됩니다.</li>
+			<li>name 속성 : 폼의 이름을 지정합니다. 자바스크립트나 DOM 등을 이용해서 form 데이터를 제어할때 사용됩니다.</li>
+			<li>action : 전송될 서버의 URL 을 명기 합니다. 이떄 대부분의 서버페이지는 서버프로그래밍이 적용된 페이지가 됩니다.</li>
+			<li>enctype : 폼데이터의 encoding 타입을 명기합니다... 나중에 파일 업로드시에 보게 됩니다.</li>
+			<li>target : 폼데이터가 처리 된 이후에 결과를 출력할 프레임이나 창을 지정할 수 있습니다. ahchor 의 target  과 같음</li>
+		</ul>
+	</div>
+	
+	<div>
+		<form method="get" action="form1.jsp" target="_blank" autocomplete="off">	
+			
+		<label for="name">ID 입력하세요</label>
+		<input type="text" id="name" name="id" size="15"><br>
+		
+		<label for="password">PASSWORD 입력하세요</label>
+		<input type="password" id="password" name="pw" size="20"><br>
+		
+		<!--체크박스(다중선택 가능)와 라디오 버튼(싱글 선택만 가능)을 알아볼게요-->
+		<!--fieldset tag : 아래의 legend 그룹을 실제 그룹화 하는 Tag 입니다. fieldset > legend > check or radio
+			legend tag..위 태그들을 그룹화 시키는 태그입니다
+			legend 는 그룹의 대표명을 넣고, 나머지는 label 을 이용하거나, 없이 checkbox 를 구성하는 방식입니다.-->
+			
+		<fieldset>
+			<legend>취미 선택하세요</legend>
+			
+				<input type="checkbox" name="hobby" value="nap" id="h1">
+				<label for="h1">낮잠</label>
+				<input type="checkbox" name="hobby" value="wout" id="h2">
+				<label for="h2">운동</label>
+		</fieldset>	
+		<br><br><br>
+		
+		<fieldset>
+			<legend>가장 좋아하는 과목 하나 선택하세요</legend>
+			
+				<input type="radio"
+				 	name="subject"
+				  	value="java"
+				  	id="c1">
+				  <label for="c1">java</label>
+				
+				<input type="radio" name="subject" value="script" id="c2">
+				<label for="c2">javascript</label>
+				
+				<input type="radio" name="subject" value="react" id="c3">
+				<label for="c3">react</label>
+		</fieldset>	
+		<!-- query string : get method 를 이용해서 서버에 전송시, 서버 페이지명 이후에 ? 다음에 나오는 데이터 형식을 뜻함-->
+		
+		
+		
+		
+			<input type="submit" value="전송"><input type="reset" value="초기화">
+		
+		</form>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

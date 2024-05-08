@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<!--
+	특정 div 요소들이 늘었다 줄었다 드으이 효과를 내는 속성 입니다.
+	속성명으로는 transition 으로 존재하고, 값은 여러 예제를 보고 추가 주석을 달을게요.
+	아주 기본적인 값으로는 효과범위(w or h 효과시간(second)) 입니다.
+	
+	고정값 : ease defult, slowly start, then fast, end slowly
+	linear : samespeed
+	ease-in : slow start
+	ease-out : slow end
+	in-out : slow start and end
+-->
+<style>
+	div{
+		background-color: red;
+		height: 100px;
+		width: 100px;
+		transition: width 2s, height 2s, transform 2s;
+	}
+	
+	div:hover{
+		width: 300px;
+		height: 300px;
+		transform: rotate3d(1, 1, 1, 180deg);
+	}
+	
+	#div1{
+		/*transition 의 지정 효과를 사용하려면,
+		  transition-timing-function: 값 이렇게 사용해야합니다*/
+		  transition-timing-function: linear;
+		  margin: 5px;
+	}
+	
+	#div2{
+		transition-timing-function: ease;
+		margin: 5px;
+	}
+	
+	#div3{
+		transition-timing-function: ease-in;
+		margin: 5px;
+	}
+	
+	#div4{
+		transition-timing-function: ease-out;
+		margin: 5px;
+	}
+	
+	#div5{
+		transition-timing-function: ease-in-out;
+		margin: 5px;
+	}						
+</style>
+</head>
+<body style="margin: 10x;">
+	<h1>트렌지션 효과1</h1>
+	<p>아래의 div 에 마우스오버 해보세요.</p>
+	<div style="margin: 5px;">이건 그냥 trans</div>
+	<div id="div1">linear</div>
+	<div id="div2">ease</div>
+	<div id="div3">ease-in</div>
+	<div id="div4">ease-out</div>
+	<div id="div5">ease-in-out</div>
+</body>
+</html>

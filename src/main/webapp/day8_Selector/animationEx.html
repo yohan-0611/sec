@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<!--
+		애니매이션 효과
+		속성명은 @keyframes 입니다.(영화의 촬영 및 상영을 상상하면 됩니다.)
+		animation-속성명..
+		
+		기본 Rule :
+		1.@keyframe 이름지정{
+			애니매이션 효과를 정의
+			from(){}
+			to(){}
+		}
+		
+		
+		2.애니매이션이 적용될 요소를 정의합니다.
+		div{
+			div 기본 css 속성 정의
+			animation-속성 : 값,
+			animation-속성 : 값,
+			n......	
+		}
+	-->
+	<style>
+		@keyframes exam1{
+			from{
+				left: 10px;
+			}
+			to{
+				left: 300px;
+			}
+		/*0%{background-color: red; left: 0px; top: 0px;}
+		25%{background-color: yellow; left: 200px; top: 0px;}
+		50%{background-color: blue; left: 200px; top: 200px}
+		50%{background-color: green; left: 0px; top: 200px}
+		100%{background-color: blueviolet; left: 0px; top: 0px;}*/
+		}
+		/* 지속시간동안의 특정 지점에 효과를 다르게 줄 수 있음 %로 수행 지점을 지정함*/
+		
+		div{	
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: exam1;
+			animation-duration: 4s;
+			position: relative;
+			animation-timing-function: ease; /*cubic-bezier(0.25, 0.1, 0.25, 1.0);*/
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../images/loopy.jpg" width="100px" height="100px">
+	</div>
+</body>
+</html>

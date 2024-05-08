@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Tag를 알아봅시다.</title>
+</head>
+<body>
+	<h3>Table Tag</h3>
+	<ul>
+		<li>
+			테이블 Tag 는 크게 3개로 구성되어집니다.
+		</li>
+		<li>
+			Table > tr(row) > td(row 내부의 Cell)<br>
+			
+			위 태그는 반드시 순서대로 중첩 되어야 하며(안그럼 깨짐), 열리면 반드시 닫아야 합니다.
+		</li>
+		<li>
+			꼭 기억할 것...모든 Cell은 행(Row) 내에 존재해야 합니다...즉 row 태그내에 td 태그를 사용하는 만큼 cell이 생성됩니다.
+		</li>
+		<li>
+			대표적 속성으로는 width, height, border(보더크기), cellpadding, cellspacing 등이 있으나<Br>
+			일반적으로는 css 에서 정의 후 제어 합니다.<br>
+			위 속성은 table 부터 td 까지 모두 사용가능하며, table 에 정의하면 자동으로 하위에 상속 되어집니다.
+		</li>
+		
+		<p>
+			테이블의 논리적 구분 Tag : Sementic Tag(body 내의 논리적으로 구분한 content 영역 tag) 처럼<br>
+			테이블에도 논리적 tag 가 존재합니다.(몰라도 그만..) thead,tbody,tfoot 로 정의될 수 있습니다.<br>
+			이 Tag 가 사용되는 부분은 만약 여러분이 인쇄를 할경우, 브라우저는 이 태그를 인식해서, 태이블이 인쇄시<br>
+			가급적 페이지가 나뉘지 않도록 사용되기 위함입니다.
+		</p>
+	</ul>
+<h4>테이블 예제1</h4>
+<table border="1" width="90%" align="center" cellspacing="0" cellpadding="0">
+	<!-- table row를 먼저 생성합니다-->
+	<caption>
+		<h3>테이블 생성 예제</h3>
+	</caption>
+	<thead>
+		<tr>
+		<th>
+			열제목1
+		</th>
+		<th>
+			열제목2
+		</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td rowspan="2">
+			<img src="../images/picture1.png">
+		</td>
+		<td>
+			값2
+		</td>
+	</tr>
+	<tr>
+		<td>
+			값4
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			값5
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<hr>
+<p>
+	<h4>Table Tag 의 열을 그룹화 하는 태그 : col, colgroup</h4>
+	
+	이 태그는 테이블의 특정 열을 묶어준는 용도로 사용됩니다.<br>
+	반드시 caption tag 다음에 사용해야 하는 특징을 가지고 있습니다. 꼭 기억하세요.!!<br>
+	사용 목적으로는 테이블이 시작되기 전에 열의 속성을 알려주는데 목적이 있습니다<br>
+	만약 하나의 열만 적용시엔 col 만 사용하고(순차적으로 매핑(maping : 대응 or 적용)) 되어지고
+	그룹으로 묶어서 mapping 시엔 colgropup tag 선언 및 하위에 col 을 선언하면 순차적으로 매핑되어집니다.
+	
+	<a href="t_colgroupEx.html" target="_blank">t_colgroupEx.html</a>확인 하기.
+	</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

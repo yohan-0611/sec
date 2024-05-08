@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>mark, progress, meter tag 알아보기</h2>
+	
+	<!--mark : 특정 문저열에 형광펜처럼 마킹을 해주는 태그.
+		meter : 특정 값을 표현해 주는 tag..1 ~ 10 범위를 갖습니다. value, min, max 속성을 이용해서 제어합니다-.
+		progress : 파일 다운로드등을 할때 다운로드 진척 상황등의 표식을 사용할때 씁니다. value, max 속성을 이용할 수 있습니다.
+		위 tag 는 부라우저 마다 지원 여부가 틀릴 수 있으니 확인해서 사용해야합니다.-->
+		
+		<div>
+			<p>우리가 현재 배우는 과정은<mark>웹 프론트</mark>과정입니다.</p>
+		</div>
+		
+		<div>
+			<p>
+				측정값 : <meter value="5" min="1" max="10">1 ~ 10 까지 범위</meter>
+			</p>
+		</div>
+		
+		<div>
+			<p>
+				다운로드 진행상태:  <progress value="70" min="0" max="100">70% 다운됨.</progress>
+			</p>
+		</div>
+		
+</body>
+</html>

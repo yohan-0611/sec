@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Css</title>
+<style> 
+	table, th, td{
+		border: solid 1px blue;
+	}
+	/* 아래에 테이블을 이용해서 다음처럼 스타일링 해보세요.(구글링 필수)
+	   결과 : 짝수 행만 색상이 여러분이 좋아하는 컬러로 나와야 되니다.(tip : even)
+	   짝수행을 테이블에서 찾아야하는데, 테이블은 table>tr>td 형태로 구조화 되어있어요
+	   tr 짝수인걸 찾아야 하는, 어때 쓰이는 가상 요소명이 있어요.???-child*/
+	table{
+		width: 100%;
+		border-collapse: collapse;
+	}
+	th, td{
+		text-align: left;
+		height: 70px;
+		padding: 8px;
+		/*border-bottom: 1px solid darkgoldenrod;*/
+	}
+	
+	  tr:nth-child(odd) {
+      background-color: #f2f2f2;
+      }
+	/*tr:hover{
+		background-color: coral;
+	}*/
+	/*가상요소중 hover 를 이용해서 Row 에 이펙트를 줄게요 */
+	/*td{
+		text-align: center;
+		padding: 15px;
+	}*/
+</style>	
+</head>
+<body>
+	<table>
+		<tr>
+			<th>
+				FirstName
+			</th>
+			<th>
+				LastName
+			</th>
+			
+		</tr>
+		
+		<tr>
+			<td>
+				요한
+			</td>
+			<td>
+				고
+			</td>
+		</tr>
+		<tr>
+			<td>
+				동현
+			</td>
+			<td>
+				김
+			</td>
+		</tr>
+		<tr>
+			<td>
+				정현
+			</td>
+			<td>
+				한
+			</td>
+		</tr>
+		<tr>
+			<td>
+				관석
+			</td>
+			<td>
+				오
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

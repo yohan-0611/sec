@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<!-- 기본 문법부터.. selector 의 종류및 정의 하는 방법을 알아봅니다. 
+1. 기본 Selector(element) {정의부의 내용은 속성 : 값 [값n]; 속성 : 값[값n...]}
+
+2. id selector : 문서내의 tag 에 적용된 id 값을 기준으로 찾아서 적용하는 selecor 입니다.
+   css 에선 #id {css 정의} 식으로 호출 합니다. 주의 할 점은 id selector 는 한문서에 한번만 적용 가능합니다.
+   때문에, html 에서 요소에 id 를 부여할때 같은 이름을 주지말도록 합니다.(중복되면 자바스크립트에서도 문제 발생함.)
+   
+   
+3.class selector : .className{} 으로 정의해서 적용할 태그내에 class 속성값으로 같은이름에 적용하는 문법
+클래스 selector 는 한번이상, 즉 중복 되어도 상관없습니다.
+
+
+-->
+<link rel="stylesheet" href="../css/mycss1.css">
+<style>
+	body{
+		background-color: #add8e6;
+	}
+	
+	h1 {
+		color: #000;
+		font-size: 20px;
+		text-align: center;
+		font-family: Tahoma;
+	}
+	p{
+		color: blueviolet;
+		/* 서체(font-family) 는 궁서체, 하늘그림채..서체에 적용되는 속성입니다.
+		이 값은 기본적으로 운영체제에서 가져옵니다..즉 운영체제에 없는 서체는 시스템 기본 서체가 적용됨
+		*/
+		font-family: Verdana;
+		font-size: 20px;
+	}
+	
+	#pSummer{
+		color: green;
+		background-color: cyan;
+		text-align: right;
+	}
+	
+	p.center{
+		text-align: center;
+		color: red;
+	}
+	
+	p.large{
+		font-size: 300%;/* 상대값은 반드시 px 값으로 기준 문자가 정해져있어야 합니다.*/
+	}
+	body *{
+		color: blue;
+		
+	}
+	h2,h3,p{
+		text-align: right;
+		color: green;
+	}
+	
+	#display{
+		border: 2px dotted blue;
+			
+	}
+	p.area{
+		font-weight: bold;
+	}
+	
+	/* h2,p,h3 요소의 문자열 정렬은 우측으로 하면서, 색상은 green 으로 하고싶다...
+	그룹 선택자 : ,를 기준으로 selector 나열 후 정의 하면 모두 적용됨*/
+</style>
+</head>
+<body>
+<!-- css 를 정의하는 방법은 3가지입니다
+	inline > 문서내 style > link 로 가져오기
+	위 세개중에 우선순위는 inline 이 제일 먼저입니다.  
+-->
+<h1>My First Css Exam</h1>
+<p>This is MM paragraph..</p>
+<h1 style="color: red;" id="pSummer">이것도 h1 입니다.</h1>
+
+<div>
+	<p>여긴 1월에 할 일입니다..</p>
+	<p>여긴 여름 휴가에 대한 내용입니다.</p>
+</div>
+
+<div>
+	<h1 class="center">여긴 다른 div 의 h1 컨테트</h1>
+	<p class="center">여긴 다른 div 의 p 컨테트</p>
+	<p class="center large">여긴 두개의 style 클래스가 적용된 p 요소입니다.</p>]
+</div>
+
+
+	
+
+
+</body>
+</html>

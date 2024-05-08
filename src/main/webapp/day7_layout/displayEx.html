@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<style>
+		*{
+		/*display 속성을 이용한 link를 가로 메뉴바로 변경해보기*/
+		/*box 모델은 모든 박스 요소들이 갖는 속성을 말합니다. 마진, 패딩, width, height: 등등
+		아래의 정의부는 모든 body 내부의 요소는 테두리까지 포함한 너빗값을 갖도록 선언합니다.*/
+		box-sizing: border-box;
+		}
+		
+		nav ul{
+			list-style: none;
+		}
+		
+		nav ul li{
+				display: inline-block;
+				padding: 20px;
+				margin: 0 20px;
+				border: 1px solid #ddd;				
+		}
+
+	</style>
+</head>
+
+<body>
+	<!--모든 요소는 display 속성을 가지고 있는데, 얘가 하는일은 아래와 같아요
+	
+1.inline or box or inline-block 모델 여부를 결정합니다.
+2.화면에 요소를 보여줄지를 결정하는 속성으로도 활용됩니다.
+
+값으로는 inline, block, inline-block(두속성을 모두 가짐), none(해당 요소를 표시하지 않음)로 구성됨-->
+	<div style="background-color: orange; height: 100px; text-align: center;">
+		<p2>이건 div 내부에 존재하는 값..</p2>
+	</div>
+	<a href="#" style="background-color: black; display:block;">링크 </a> 하하하하하하하ㅏ핳
+	
+	<h2>List를 가로 메뉴로 변경한 구성 보기</h2>
+	<nav>
+		<ul>
+			<li><a href="#">메뉴 1</a></li>
+			<li><a>메뉴 2</a></li>
+			<li><a>메뉴 3</a></li>
+			<li><a>메뉴 4</a></li>
+			
+		</ul>
+	</nav>
+	
+	<h1>Display 속성과 자바스크립트를 이용한 동적 제어하기</h1>
+</body>
+
+</html>

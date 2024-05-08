@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+	<style>
+		div{
+			background-color: green;
+		}
+		div.first{
+			/*투명도는 영어로 opacity*/
+			opacity: 0.1;
+		}
+		
+		div.second{
+			/*투명도는 영어로 opacity*/
+			opacity: 0.3;
+		}
+		
+		div.third{
+			/*투명도는 영어로 opacity*/
+			opacity: 0.6	;
+		}
+			
+	</style>
+<!--모든 html elemet 는 컬러를 갖습니다. 이 컬러는 적용되는 부분에 따라서 글짜, 배경에 반영됩니다.
+이중 컬러의 조합에 대해 알아볼건데, 컬러 조합은 아래처럼 대략 4개 정도로 구분되어집니다.
+1. RGB : Red Green Blue 조합(일반적으로 컬러명 사용)
+2. HEX : #을 이용해서 16진수의 컬러값을 사용하는 것
+3. HSL : 잘 사용하지 않습니다..(hue, saturation, lightness)조합..
+4. 위 모든 조합에 투명도를 적용할 수 있음(0.0(완전투명) ~ 1.0(완전불투명)까지..)
+   투명도 값은 제일 마지막 값으로 사용되어야 합니다. ex(123,255,123,0.3)
+   -->
+   
+   <h1 style="background-color: rgb(0,0,255,0.1); border: 2px solid red;">Hello World</h1>
+   
+  	<p style="background-color: #ffa500; border: 2px dashed lime;"> adsdasdaknewjnegjnejgn;nergjnengjnejolgnoljesnrgoljngoljngre
+  	 adsdasdaknewjnegjnejgn;nergjnengjnejolgnoljesnrgoljngoljngre
+  	 adsdasdaknewjnegjnejgn;nergjnengjnejolgnoljesnrgoljngoljngre
+     adsdasdaknewjnegjnejgn;nergjnengjnejolgnoljesnrgoljngoljngre</p>
+     
+     <div class="first">
+		 <p>투명도는 0.1</p>
+	 </div>
+	 
+	 <div class="second">
+		 <p>투명도는 0.1</p>
+	 </div>
+	 
+	 <div class="third">
+		 <p>투명도는 0.1</p>
+	 </div>
+	 
+	 <div>
+		 <p>그냥</p>
+	 </div>
+
+</body>
+</html>
